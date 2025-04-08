@@ -1,10 +1,10 @@
 services:
     kasm-portainer:
-        image: 'kasm-portainer:latest'
+        image: 'ghcr.io/adelorenzo-portainer/kasm-portainer'
         privileged: true
         container_name: kasm-portainer
-        environment:
-            - VNC_PW=password
+#        environment:
+#            - VNC_PW=password
         ports:
             - '6901:6901'
         shm_size: 512m
