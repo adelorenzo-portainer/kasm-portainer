@@ -1,0 +1,12 @@
+services:
+    kasm-portainer:
+        image: 'kasm-portainer:latest'
+        privileged: true
+        container_name: kasm-portainer
+        environment:
+            - VNC_PW=password
+        ports:
+            - '6901:6901'
+        shm_size: 512m
+        tty: true
+        stdin_open: true
